@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Oninput soma basica</title>
+    </head>
+
+    <body>
+        <h1>Teste</h1>
+        <form action="Cadastro.php" target="_blank" autocomplete="on">
+            <p>
+                <label for="in1">numero1</label>
+                <input type="number" name="nom" id="in1" min="0 " max="50" required
+                    oninput="Soma.innerHTML = Number(in1.value) + Number(in2.value) ">
+            </p>
+            <p>
+                <label for="in2">numero2</label>
+                <input type="number" name="nom" id="in2" min="0 " max="50" required
+                    oninput="Soma.innerHTML = Number(in1.value) + Number(in2.value) ">
+            </p>
+            <p><label for="Soma">Soma</label>
+                <output name="some" id="Soma">0</output>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </body>
+
+</html>

@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+p:not(.meio) {
+    color: blue;
+}
+
+
+input:checked+p {
+    background: rgb(124, 3, 3);
+
+}
+
+input:not(:checked)+p {
+    background: yellow;
+}

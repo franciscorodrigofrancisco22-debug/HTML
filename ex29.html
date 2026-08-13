@@ -4,7 +4,6 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="theme-color" content="#1bb566">
         <link rel="shortcut icon" href="C:\Users\Rodrigo Francisco\Documents\py\HTML\HTML5_logo_and_wordmark.svg"
             type="image/x-icon">
         <title>Sobre HTML e CSS</title>
@@ -59,16 +58,16 @@
             }
 
             nav>a {
-                color: rgb(2, 182, 56);
+                color: rgb(9, 5, 243);
                 padding: 10px;
-                border-radius: 7px;
+
                 text-decoration: none;
                 font-weight: bold;
                 transition-duration: 1s;
             }
 
             nav>a:hover {
-                background-color: brown;
+                background-color: rgb(6, 10, 10);
                 color: #050111;
             }
 
@@ -85,10 +84,17 @@
 
             }
 
+            video {
+                height: 360px;
+                width: 1700px;
+                background-color: antiquewhite;
+            }
+
             h3 {
                 color: rgb(1, 1, 31);
                 text-align: center;
                 font-size: 2em;
+
             }
 
             h4 {
@@ -106,22 +112,20 @@
 
         </header>
         <nav>
-            <A href="#">
+            <a href="#ex29.html">
                 Home
-            </A>
-
-            <A href="#">
-                About
-            </A>
-            <a href="#">
-                Donwload
             </a>
+
             <a href="#">
+                About
+            </a>
+
+            <a href="ex27.html">
                 Register now
             </a>
         </nav>
         <P>
-        <H2>
+        <H2 class="">
             Tudo sobre HTML
 
         </H2>
@@ -139,6 +143,7 @@
 
         SGML é um padrão de formatação de textos. Não foi desenvolvido para hipertexto, mas tornou-se conveniente para
         transformar documentos em hiper-objetos e para descrever as ligações.
+
         <br>
         <h4>Quem o criou?</h4>
         História
@@ -146,32 +151,43 @@
         Tim Berners-Lee em 2008.
         Tim Berners-Lee (físico britânico) criou o HTML original (e outros protocolos associados como o HTTP), numa
         estação NeXTcube, usando o ambiente de desenvolvimento NeXTSTEP. Na época, a linguagem não era uma
-        especificação, mas uma coleção de ferramentas para resolver um problema de Tim: a comunicação e disseminação das
-        pesquisas entre ele e o seu grupo de colegas. A sua solução, combinada com a então emergente internet pública
+        especificação, mas uma coleção de ferramentas para resolver um problema de Tim: a comunicação e disseminação
+        das
+        pesquisas entre ele e o seu grupo de colegas. A sua solução, combinada com a então emergente internet
+        pública
         (que tornar-se-ia a Internet), ganhou atenção mundial.
 
         As primeiras versões do HTML foram definidas com regras sintáticas flexíveis, o que ajudou aqueles sem
         familiaridade com a publicação na Web. Através do tempo, a utilização de ferramentas para autoria de HTML
-        aumentou, assim como a tendência em tornar a sintaxe cada vez mais rígida. Apesar disso, por questões históricas
-        (retrocompatibilidade), os navegadores ainda hoje conseguem interpretar páginas web que estão longe de ser um
+        aumentou, assim como a tendência em tornar a sintaxe cada vez mais rígida. Apesar disso, por questões
+        históricas
+        (retrocompatibilidade), os navegadores ainda hoje conseguem interpretar páginas web que estão longe de ser
+        um
         código HTML válido.
 
-        A linguagem foi definida em especificações formais na década de 1990, inspiradas nas propostas originais de Tim
+        A linguagem foi definida em especificações formais na década de 1990, inspiradas nas propostas originais de
+        Tim
         Berners-Lee em criar uma linguagem baseada em SGML para a Internet. A primeira publicação foi esboçada por
-        Berners-Lee e Dan Connolly e publicada em 1993 na IETF, como uma aplicação formal para o SGML (com uma DTD em
-        SGML definindo a gramática). A IETF criou um grupo de trabalho para o HTML no ano seguinte, e publicou o HTML
-        2.0 em 1995. Desde 1996, as especificações HTML vêm sendo mantidas, com o auxílio de fabricantes de software,
+        Berners-Lee e Dan Connolly e publicada em 1993 na IETF, como uma aplicação formal para o SGML (com uma DTD
+        em
+        SGML definindo a gramática). A IETF criou um grupo de trabalho para o HTML no ano seguinte, e publicou o
+        HTML
+        2.0 em 1995. Desde 1996, as especificações HTML vêm sendo mantidas, com o auxílio de fabricantes de
+        software,
         pelo World Wide Web Consortium (W3C).[1] Apesar disso, em 2000 a linguagem tornou-se também uma norma
-        internacional (ISO/IEC 15445:2000). A recomendação HTML 4.01 foi publicada no final de 1999 pelo W3C. Uma errata
-        ainda foi lançada em 2001.
+        <video controls autoplay>
+            <source src="Rodrigo.mp4.mp4" type="video/mp4">
+        </video>
 
+        <br>
         Desde a publicação do HTML 3.5 no final de 1997, o grupo de trabalho da W3C tem cada vez mais — e de 2002 a
         2006, de forma exclusiva — focado no desenvolvimento do XHTML, uma especificação HTML baseada em XML que é
         considerada pela W3C como um sucessor do HTML.[2][3][4] O XHTML faz uso de uma sintaxe mais rigorosa e menos
         ambígua para tornar o HTML mais simples de ser processado e estendido.
 
         Em janeiro de 2008 o W3C publicou a especificação do HTML5 como Working Draft. Apesar de sua sintaxe ser
-        semelhante à de SGML, o HTML5 abandonou qualquer tentativa de ser uma aplicação SGML e definiu explicitamente
+        semelhante à de SGML, o HTML5 abandonou qualquer tentativa de ser uma aplicação SGML e definiu
+        explicitamente
         sua própria serialização "html", além de uma alternativa baseada em XML, o XHTML5.[5]
 
         Várias versões HTML foram publicadas:
@@ -246,8 +262,7 @@
         div:Tag para criar um bloco, mais utilizado com CSS;
 
         span:Tag para modificação de uma parte do texto da página;
-
-        <img>Serve para inserir imagens
+        erve para inserir imagens
 
         <a href="https://www.wikipedia.org">Wikipédia, a enciclopédia livre</a>
 
@@ -290,11 +305,14 @@
         <h2>
             O que é CSS?
         </h2>
-        Definição de estilo é um conjunto de propriedades visuais para um elemento, o CSS define regras que fazem as
-        definições de estilo casarem com um elemento ou grupo de elemento, o documento pode conter um bloco de CSS num
+        Definição de estilo é um conjunto de propriedades visuais para um elemento, o CSS define regras que
+        fazem as
+        definições de estilo casarem com um elemento ou grupo de elemento, o documento pode conter um bloco de
+        CSS num
         elemento style ou usando o elemento link apontando para um arquivo externo que contenha o bloco CSS.
 
-        Cascading Style Sheets (abreviado CSS) é um mecanismo para adicionar estilos (cores, fontes, espaçamento, etc.)
+        Cascading Style Sheets (abreviado CSS) é um mecanismo para adicionar estilos (cores, fontes,
+        espaçamento, etc.)
         a uma página web,[2] aplicado diretamente nas tags HTML ou ficar contido dentro das tags style
         . Também é possível,
         adicionar estilos adicionando um link para um arquivo CSS que contém os estilos. Assim,
@@ -309,29 +327,41 @@
         modificando o modo como o CSS é interpretado e a página desenhada.
         <br>
         <h3>Sobre CSS</h3>
-        CSS tem uma sintaxe simples, e utiliza uma série de palavras em inglês para especificar os nomes de diferentes
+        CSS tem uma sintaxe simples, e utiliza uma série de palavras em inglês para especificar os nomes de
+        diferentes
         propriedade de estilo de uma página.
 
-        Uma instrução CSS consiste em um seletor e um bloco de declaração. Cada declaração contém uma propriedade e um
+        Uma instrução CSS consiste em um seletor e um bloco de declaração. Cada declaração contém uma
+        propriedade e um
         valor, separados por dois pontos (:). Cada declaração é separada por ponto e vírgula (;).[3]
 
-        Em CSS, seletores são usados para declarar a quais elementos de marcação um estilo se aplica, uma espécie de
-        expressão correspondente. Os seletores podem ser aplicados a todos os elementos de um tipo específico, ou apenas
-        aqueles elementos que correspondam a um determinado atributo; elementos podem ser combinados, dependendo de como
-        eles são colocados em relação uns aos outros no código de marcação, ou como eles estão aninhados dentro do
+        Em CSS, seletores são usados para declarar a quais elementos de marcação um estilo se aplica, uma
+        espécie de
+        expressão correspondente. Os seletores podem ser aplicados a todos os elementos de um tipo específico,
+        ou apenas
+        aqueles elementos que correspondam a um determinado atributo; elementos podem ser combinados, dependendo
+        de como
+        eles são colocados em relação uns aos outros no código de marcação, ou como eles estão aninhados dentro
+        do
         objeto de documento modelo.
 
-        Pseudoclasse é outra forma de especificação usada em CSS para identificar os elementos de marcação, e, em alguns
+        Pseudoclasse é outra forma de especificação usada em CSS para identificar os elementos de marcação, e,
+        em alguns
         casos, ações específicas de usuário para o qual um bloco de declaração especial se aplica. Um exemplo
-        frequentemente utilizado é o :hover pseudoclasse que se aplica um estilo apenas quando o usuário 'aponta para' o
-        elemento visível, normalmente, mantendo o cursor do mouse sobre ele. Isto é anexado a um seletor como em a:hover
-        ou #elementid:hover. Outras pseudoclasses e pseudoelementos são, p. ex., :first-line, :visited ou :before. Uma
+        frequentemente utilizado é o :hover pseudoclasse que se aplica um estilo apenas quando o usuário 'aponta
+        para' o
+        elemento visível, normalmente, mantendo o cursor do mouse sobre ele. Isto é anexado a um seletor como em
+        a:hover
+        ou #elementid:hover. Outras pseudoclasses e pseudoelementos são, p. ex., :first-line, :visited ou
+        :before. Uma
         pseudoclasse especial é :lang(c), "c".
 
-        Uma pseudoclasse seleciona elementos inteiros, tais como :link ou :visited, considerando que um pseudoelemento
+        Uma pseudoclasse seleciona elementos inteiros, tais como :link ou :visited, considerando que um
+        pseudoelemento
         faz uma seleção que pode ser constituída por elementos parciais, tais como :first-line ou :first-letter.
 
-        Seletores podem ser combinados de outras formas também, especialmente em CSS 2.1, para alcançar uma maior
+        Seletores podem ser combinados de outras formas também, especialmente em CSS 2.1, para alcançar uma
+        maior
         especificidade e flexibilidade.[4]
 
         Aqui está um exemplo que resume as regras acima:
@@ -340,13 +370,16 @@
         [property2: value2;
         ...]
         }
-        Definição de estilo é um conjunto de propriedades visuais para um elemento, o CSS define regras que fazem as
-        definições de estilo casarem com um elemento ou grupo de elemento, o documento pode conter um bloco de CSS num
+        Definição de estilo é um conjunto de propriedades visuais para um elemento, o CSS define regras que
+        fazem as
+        definições de estilo casarem com um elemento ou grupo de elemento, o documento pode conter um bloco de
+        CSS num
         elemento style ou usando o elemento link apontando para um arquivo externo que contenha o bloco CSS.
 
         Para uso com o CSS, foi criado o atributo class que todo elemento pode conter.
 
-        As regras de casamento para o CSS são chamadas de seletores, uma definição de estilo pode ser casada com um
+        As regras de casamento para o CSS são chamadas de seletores, uma definição de estilo pode ser casada com
+        um
         seletor ou um grupo de seletores separados por vírgula, um seletor pode casar um elemento por:
 
         elemento do tipo : element_name { style definition; }
@@ -367,28 +400,33 @@
         background-color: #FFF;
         margin: 5px 10px;
         }
-        O código acima define fonte padrão Arial, caso não exista, substitui por Verdana, caso não exista, define
+        O código acima define fonte padrão Arial, caso não exista, substitui por Verdana, caso não exista,
+        define
         qualquer fonte sans-serif. Define também a cor de fundo do corpo da página.
 
-
-
-
-        <video width="640" height="360" controls poster="capa.jpg">
-
-            <source src="" type="">
-
+        <video controls autoplay>
+            <source src="083bab1ee44afaa742d88f0da5e5452c_1782730335389.mp4" type="video/mp4">
         </video>
 
 
-        Sua necessidade adveio do fato do HTML, aos poucos, ter deixado de ser usado apenas para criação de conteúdo na
+
+
+
+
+
+        Sua necessidade adveio do fato do HTML, aos poucos, ter deixado de ser usado apenas para criação de
+        conteúdo na
         web, e portanto havia uma mistura de formatação e conteúdo textual dentro do código de uma mesma página.
         Contudo, na criação de um grande portal, fica quase impossível manter uma identidade visual, bem como a
         produtividade do desenvolvedor. É nesse ponto que entra o CSS.
 
-        As especificações do CSS podem ser obtidas no site da W3C "World Wide Web Consortium", um consórcio de diversas
+        As especificações do CSS podem ser obtidas no site da W3C "World Wide Web Consortium", um consórcio de
+        diversas
         empresas que buscam estabelecer padrões para a Internet.
 
-        É importante notar que nenhum navegador suporta igualmente as definições do CSS. Desta forma, o web designer
-        deve sempre testar suas folhas de estilo em navegadores de vários fabricantes, e preferencialmente em mais de
+        É importante notar que nenhum navegador suporta igualmente as definições do CSS. Desta forma, o web
+        designer
+        deve sempre testar suas folhas de estilo em navegadores de vários fabricantes, e preferencialmente em
+        mais de
         uma versão, para se certificar de que o que foi codificado realmente seja apresentado da forma desejada
         </p>

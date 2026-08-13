@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                box-sizing: border-box;
+
+            }
+
+            body {
+                height: 100vh;
+            }
+
+            body {
+
+                background: url("back-phone.jpg") no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
+
+            h1 {
+                text-align: center;
+                text-shadow: 23px 23px 23px rgba(245, 222, 179, 0.747);
+
+                color: white;
+                font-size: 2em;
+            }
+
+            main {
+                background-color: rgba(255, 255, 255, 0.671);
+                width: 80%;
+                margin: auto;
+                border-radius: 10px;
+                padding: 10px;
+                margin-top: 20px;
+            }
+
+            img {
+                margin: auto;
+
+                display: block;
+            }
+
+            img#PC {
+                display: none
+            }
+
+            img#PHONE {
+                display: block;
+            }
+
+            img#tv {
+                display: none;
+            }
+
+            img#table {
+                display: none;
+            }
+
+            img#print {
+                display: none;
+            }
+        </style>
+        <link rel="stylesheet" href="Estilos.css">
+        <title>Mobile first</title>
+
+    </head>
+
+    <body>
+        <main>
+            <h1>Media queries futures hello yes</h1>
+            <img src="icon-pc.png" id="PC" alt="pc">
+            <img src="icon-phone.png" id="PHONE" alt="PHONE">
+            <img src="icon-print.png" id="print" alt="prints">
+            <img src="icon-tablet.png" id="table" alt="tables">
+            <img src="icon-tv.png" id="tv" alt="TV">
+        </main>
+    </body>
+
+</html>
