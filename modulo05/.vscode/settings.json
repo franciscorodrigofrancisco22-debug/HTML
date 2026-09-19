@@ -1,0 +1,15 @@
+{
+    "python-envs.pythonProjects": [
+        {
+            "path": "Ex01_project",
+            "envManager": "ms-python.python:venv",
+            "packageManager": "ms-python.python:pip"
+        },
+        {
+            "path": "Grid layout/Grid01",
+            "envManager": "ms-python.python:venv",
+            "packageManager": "ms-python.python:pip"
+        }
+    ],
+    "python-envs.defaultEnvManager": "ms-python.python:system"
+}

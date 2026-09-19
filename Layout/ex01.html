@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <style>
+            * {
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-image: url("271928.jpg");
+            }
+
+            input[type=search] {
+                border-radius: 4px;
+                width: 50%;
+                padding: 12px 16px;
+                height: 40px;
+            }
+
+
+
+            label {
+                font-size: 2em;
+            }
+
+            img {
+                color: black;
+                width: 50px;
+                height: 30px;
+
+                border-radius: 5px;
+
+            }
+
+            div {
+                display: flex;
+                margin-top: 40px;
+                margin-right: 12px;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            header {
+                padding: 10px;
+                background-color: rgb(50, 53, 54);
+                display: flex;
+                color: white;
+                justify-content: space-between;
+                align-content: center;
+                position: sticky;
+                top: 0;
+
+            }
+
+            nav#menu ul li a:hover {
+                background-color: rgb(239, 239, 243);
+                color: black;
+                border-radius: 5px;
+            }
+
+            section ul li {
+                list-style-type: disc;
+            }
+
+            li a {
+                text-decoration: none;
+                color: rgb(26, 35, 39);
+                font: bold 18pt arial;
+            }
+
+            li a:hover {
+                text-decoration: none;
+                color: black;
+                font: bold 18pt arial;
+            }
+
+            nav#menu ul {
+                list-style: none;
+                display: flex;
+                gap: 12px;
+            }
+
+            header h1 {
+                color: black;
+                font: bold 30pt arial;
+                margin-left: 3px;
+            }
+
+            nav#menu ul a {
+                color: white;
+                display: flex;
+                font-size: 1.6em;
+                text-decoration: none;
+                padding: 12px 16px;
+            }
+
+            main {
+                grid-column: 2;
+                border-radius: 4px;
+                gap: 5px;
+
+
+            }
+
+            summary {
+                font: bold 17pt Arial;
+
+            }
+
+            section h1 {
+                color: rgb(130, 130, 136);
+            }
+
+
+
+            h3 {
+
+                margin-left: 9px;
+
+            }
+
+            #d {
+                font: bold 15pt Arial;
+                display: flex;
+                text-decoration: none;
+                margin-left: 22px;
+                color: blanchedalmond;
+                margin-bottom: 7px;
+            }
+
+            footer {
+                padding: 12ppx 16px;
+                font-size: 1em;
+                background-color: rgba(19, 15, 15, 0.692);
+                color: white;
+
+                text-align: center;
+
+            }
+
+            footer>h1 {
+
+                margin: auto;
+            }
+
+            #d:hover {
+
+                color: darkcyan;
+
+            }
+
+            footer>a {
+                font-size: 1.5em;
+                color: white;
+                text-decoration: none;
+            }
+
+            section h1 {
+                margin-left: 20%;
+                margin-top: 30px;
+            }
+
+            h3 {
+                margin-left: 20%;
+            }
+
+            section li a {
+                margin-left: 20%;
+            }
+
+
+            section {
+                background-color: rgba(36, 19, 19, 0.774);
+
+
+                margin-bottom: 3%;
+                border-radius: 5px;
+            }
+        </style>
+        <title>Layout</title>
+    </head>
+
+    <body>
+        <header>
+            <h1 id="sec">Loja digital</h1>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="##">Settings</a></li>
+                    <li><a href="#">Messangs</a></li>
+                    <li><a href="#">Register</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <div class="div">
+
+
+
+
+
+
+        </div>
+        <main>
+            <section>
+
+                <h1>Serviços </h1>
+                <h3>Vende-se os seguintes produtos :</h3>
+                <ul>
+                    <li><a href="#">Roupa</a></li>
+                    <li><a href="#">Calçados</a></li>
+                    <li><a href="#">T-shirts</a></li>
+                    <li><a href="#">Phones de ouvidos</a></li>
+                    <li><a href="#">Computadores</a></li>
+                </ul>
+
+
+
+                <h1>Metodos de pagamentos:</h1>
+
+                <ul>
+                    <li><a href="">Cartão de credito</a></li>
+                    <li><a href="">IBAN</a></li>
+                    <li><a href="">Dinheiro fisico</a></li>
+                </ul>
+
+
+            </section>
+            <section id="">
+                <h1>Projetos</h1>
+                <details>
+                    Ela foi criada em função de resolver os muitos problemas do homem não só , como ajudar o homem a
+                    fazer tarefas de matematica, física, etc.
+                    Seu Criador Rodrigo Francisco
+                    <summary>Saiba mais Sobre Jarvis </summary>
+                </details>
+
+            </section>
+        </main>
+        <br>
+        <section>
+            <details>
+                <a href="../modulo05/Formulario/Form12.html" target="_blank" id="d">Login</a>
+                <a href="../modulo05/Formulario/Form10.html" id="d" target="_blank">Soma</a>
+                <a href="../modulo05/Projeto Cordel/index.html" id="d" target="_blank">Cordel</a>
+                <a href="../modulo05/Projeto Portefólio/index.html" id="d" target="_blank">
+
+                </a>
+                <summary>Saiba mais Sobre o nosso projeto </summary>
+            </details>
+        </section>
+        <footer>
+            <h1>Feito pelo Rodrigo Francisco</h1>
+            <a href="#">Jarvis</a>
+        </footer>
+
+
+    </body>
+
+</html>

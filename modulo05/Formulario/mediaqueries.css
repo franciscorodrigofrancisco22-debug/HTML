@@ -1,0 +1,138 @@
+@charset "UTF-8";
+@media screen and (min-width:768px) and (max-width:992px) {
+    body {
+        background-image: linear-gradient(to top, rgb(17, 17, 17), #790be0fd);
+    }
+
+    section#login {
+        width: 80%;
+        height: 85%;
+        background: rgb(108, 6, 148);
+        color: white;
+        font: bold 12pt arial;
+    }
+
+    section#login>div#imagens {
+        width: 40%;
+
+        margin: auto;
+    }
+
+
+
+
+
+    form>div.campo>input {
+        margin: auto;
+        padding: 4px;
+        height: 40px;
+        border-radius: 20;
+
+    }
+
+
+    input[type=submit] {
+        font-size: 1.5em;
+        border-radius: 30px;
+        background-color: hsla(308, 81%, 15%, 0.952);
+    }
+
+
+
+    input[type=submit]:hover {
+        font-size: 1.5em;
+        border-radius: 30px;
+        background-color: rgb(17, 17, 17);
+        color: white;
+    }
+
+
+    section#login>div#formulario {
+        margin: auto;
+        width: 65%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    button {
+        background-color: hsla(207, 97%, 45%, 0.952);
+    }
+
+    form>div.campo>i>img#robo {
+        color: white;
+        background-color: #1436df;
+        width: 43px;
+        height: 43px;
+        background-attachment: fixed;
+        font-size: 2em;
+        padding: 20;
+        border-radius: 2px;
+    }
+
+
+
+
+    a {
+        background-color: darkcyan;
+        color: white;
+    }
+
+    form>section>div.campo {
+        background-color: #19bbd8;
+        border-radius: 10px;
+        margin-top: 20;
+        padding: 20;
+        width: 100%;
+        height: 50px;
+        margin: 20;
+
+
+
+    }
+
+    form>div.campo>input {
+        width: calc(89%);
+        height: 40px;
+        margin: auto;
+
+        transform: translateY(-16px);
+        border-radius: 20;
+    }
+
+    div.campo>input:focus-within {
+        background-color: aqua;
+    }
+
+
+
+    body {
+        background-image: linear-gradient(to bottom, purple, rgb(0, 162, 255));
+    }
+
+    section#login {
+        width: 950px;
+        background-color: white;
+        color: #030305;
+    }
+
+    section#login>div#imagens>img {
+
+        width: 30%;
+        margin-top: 50px;
+        margin-right: 38%;
+        float: right;
+        border: 4px solid rgb(6, 103, 148);
+
+    }
+
+
+
+    section#login>div#formulario {
+        float: left;
+        width: 70%;
+        margin-bottom: 20%;
+        margin-left: 15%;
+    }
+
+
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IP_IZ</title>
+        <link rel="shortcut icon" href="IMG-20260129-WA0001.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+    </head>
+
+    <body>
+        <main>
+            <section id="login">
+                <div id="imagens">
+                    <img src="IMG-20260129-WA0001.jpg" alt="">
+                </div>
+                <div id="formulario">
+                    <h1>Criar conta</h1>
+                    <p> Seja Bem-vindo ou Bem-vinda novamente a escola do IPIZ, Faça o sessão para poder acessar sua
+                        pauta
+                    </p>
+                    <form action="EX01.js" method="post" autocomplete="on" name="fExempla">
+                        <section name="Exemplo">
+                            <div class="campo" name="Campo"><i><img src="programacao.png" alt="" id="robo"></i>
+                                <input type="text" name="texto" id="texte" autocomplete="email" required
+                                    placeholder="Insira o  seu nome completo" minlength="0" maxlength="40">
+                                <label for="login">Login</label>
+                            </div>
+                            <div class="campo" name="Campo"><i><img src="programacao.png" alt="" id="robo"></i>
+                                <input type="email" name="mail" id="login" autocomplete="email" required
+                                    placeholder="Insira um email " minlength="0" maxlength="40">
+                                <label for="login">Login</label>
+                            </div>
+                            <div class="campo" name="Campo">
+                                <i><img src="robo.png" alt="" id="robo"></i>
+                                <input type="password" name="sena" id="isenha" minlength="8" maxlength="20"
+                                    autocomplete="current-password" required placeholder="Insira   uma senha">
+                                <label for="isenha">Senha</label>
+                            </div>
+                            <div class="campo" name="Campo">
+                                <i><img src="robo.png" alt="" id="robo"></i>
+                                <input type="text" name="Texta" id="senha" minlength="0" maxlength="5"
+                                    autocomplete="current-password" required placeholder="Insira   um Processo">
+                                <label for="Processo">Processo</label>
+                            </div>
+                        </section>
+
+
+                        <input type="submit" onclick="Clicar()" value="Enviar">
+
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <script>
+
+            function Clicar() {
+                var Conta, Senha, Email, Processo;
+                Conta = document.fExempla.texto.value;
+                window.alert("Nome do aluno é : " + Conta);
+
+                Senha = document.fExempla.sena.value;
+                window.alert("Sua senha  é :  " + Senha);
+                Email = document.fExempla.mail.value;
+                window.alert("Seu email  é  :  " + Email);
+                Processo = document.fExempla.Texta.value;
+                window.alert("Seu pocesso é :  " + Processo);
+            }
+
+        </script>
+    </body>
+
+</html>

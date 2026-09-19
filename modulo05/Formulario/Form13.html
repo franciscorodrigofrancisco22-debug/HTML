@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="6692832af692f735f1192b47f012a794d77a9368dcffef3ae068dbdb49f74e8c.png"
+            type="image/x-icon">
+        <link rel="stylesheet" href="Form13.css">
+        <link rel="stylesheet" href="Form13.1.css">
+        <title>J.A.R.V.I.S</title>
+    </head>
+
+    <body>
+        <main>
+            <section class="login">
+                <div class="imagens">
+                    <!--Aqui fica a imagem do site-->
+
+                </div>
+                <div class="formulario">
+                    <!--aqui  é onde vamos  conter o nosso formúlario-->
+                    <h1>Login</h1>
+
+                    <form action="Cadastro.php" method="post" autocomplete="on">
+                        <div class="campo">
+                            <i><img src="robo.png" alt=""></i>
+                            <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required>
+                            <label for="nome"></label>
+                        </div>
+                        <div class="campo">
+                            <i><img src="robo.png" alt=""></i>
+                            <input type="email" name="emai" id="mail" autocomplete="email" maxlength="30" required
+                                placeholder="Exemplo:rodrigoquicunha@gmail.com">
+
+                            <label for="mail">Email</label>
+                        </div>
+                        <div class="campo">
+                            <i><img src="programacao.png" alt=""></i>
+                            <input type="password" name="senha" id="isenha" minlength="8" maxlength="30"
+                                autocomplete="current-password" required placeholder="Digite sua palavra-passe"><label
+                                for="isenha">Senha</label>
+                        </div>
+                        <p>
+                            <input type="submit" value="Enviar">
+                        </p>
+                        <p>
+                            <input type="reset" value="Limpar">
+
+                        </p>
+                    </form>
+                </div>
+
+            </section>
+        </main>
+
+
+    </body>
+
+</html>

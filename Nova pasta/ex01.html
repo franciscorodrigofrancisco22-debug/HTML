@@ -4,18 +4,38 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Formulario</title>
+        <title>Document</title>
+        <style>
+            @charset "UTF-8";
+
+            .pai {
+                padding: 10px;
+                height: 96vh;
+                background-color: red;
+                background-size: 100% 100%;
+
+                position: relative;
+                background-image: url("141335.jpg");
+            }
+
+            .filho {
+                background-image: url("1322308.jpeg");
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 400px;
+                height: 200px;
+                background-color: yellow;
+                background-size: 100% 100%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
     </head>
 
     <body>
-
-        <h1>Cadastre se aqui</h1>
-        <form action="Cadastrase.php">
-            <p>Nome
-                <input type="text" name="nome" id="nome" placeholder="Nome">
-                <input type="submit" value="Enviar">
-            </p>
-        </form>
+        <section class="pai">
+            <article class="filho"></article>
+        </section>
     </body>
 
 </html>

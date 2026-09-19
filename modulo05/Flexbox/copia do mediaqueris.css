@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+div.filho {
+    flex-flow: column nowrap;
+}
+
+div.filho>a {
+    width: 90vw;
+
+}
+
+body {
+    background-color: gray;
+}
+
+div.pai {
+    flex-flow: column nowrap;
+    background-color: lightgray;
+}
+
+div.pai>h1 {
+    flex-basis: 50px;
+}

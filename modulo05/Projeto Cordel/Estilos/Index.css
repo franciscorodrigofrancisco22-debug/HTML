@@ -1,0 +1,23 @@
+@media screen and (orientation: portrait) {
+    header>h1 {
+        font-size: 47px;
+    }
+
+    #imagens {
+
+        padding: 5px;
+        color: white;
+        background-color: rgb(29, 29, 29);
+    }
+
+    section {
+
+        font-family: var(--font3);
+        padding-top: 10%;
+        padding-bottom: 10%;
+        font-size: 1.3em;
+        line-height: 150%;
+        padding-left: 30px;
+    }
+
+}

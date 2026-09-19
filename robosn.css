@@ -1,0 +1,35 @@
+using System;
+
+class robosn {
+    static void main() {
+        //Escopo do menu inicial
+
+        Console.WriteLine("==Menu==");
+        Console.WriteLine("1-Criar conta:");
+        Console.WriteLine("2-Encontrar Conta:");
+        int opcao=int.Parse(Console.ReadLine());
+
+        switch(opcao) {
+            case 1:
+                Console.WriteLine("==Criar conta==");
+
+            Console.Write("Digite o seu Nome: ");
+            string nome=Console.ReadLine();
+
+            Console.Write("Digite seu NIF: ");
+            string NIF=Console.ReadLine();
+
+
+            break;
+
+            case 2:
+                Console.Write("==Encontrar Conta==");
+            string Search=Console.ReadLine();
+
+
+            break;
+
+
+        }
+    }
+}

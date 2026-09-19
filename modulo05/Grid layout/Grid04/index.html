@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .container {
+                border: 3px solid rgb(102, 1, 102);
+                grid-template: repeat(3, 100px)/ repeat(4, 1fr);
+                display: grid;
+                gap: 5px;
+            }
+
+            .caixa01 {
+                background: rgb(24, 3, 82);
+
+                grid-area: 2 /1 / 4 / 3;
+            }
+
+            .caixa3 {
+                background-color: red;
+                grid-area: 1/1 /2/5;
+            }
+
+            .caixa02 {
+                background: rgb(2, 85, 15);
+                text-align: center;
+                grid-area: 2 /3 / 4 / 5;
+
+
+
+            }
+        </style>
+        <title>Grid layout para itens</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="caixa01">
+                Caixa01
+            </div>
+            <div class="caixa02">
+                Caixa02
+            </div>
+            <div class="caixa3">
+                Caixa03
+            </div>
+        </div>
+
+
+    </body>
+
+</html>

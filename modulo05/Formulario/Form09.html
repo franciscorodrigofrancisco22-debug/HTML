@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Oninput</title>
+    </head>
+
+    <body>
+        <h1>Teste</h1>
+        <form action="Cadastro.php">
+            <p>
+                <label for="Inumero">Numero</label>
+                <input type="range" name="rang" id="Inumero" min="0" max="10" value="5"
+                    oninput="Valor.innerHTML = Number(Inumero.value)">
+                <output id="Valor">5</output>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </body>
+
+</html>

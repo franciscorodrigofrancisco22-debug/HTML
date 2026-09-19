@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="rodrigo.css">
+        <link rel="stylesheet" href="Form1.css">
+        <title>Formúlario</title>
+    </head>
+
+    <body id="area">
+        <main>
+
+            <section id="login">
+                <div id="imagens">
+                    <img src="IMG-20260129-WA0001.jpg" alt="" class="Foto">
+                    <!--Imagens em border-->
+                </div>
+                <div class="Formo">
+                    <h1> Criar conta </h1>
+                    <p>Seja Bem-vindo ou Bem-vinda novamente á este site faça o login para poder acessar o nosso canal
+                        do IPIZ!</p>
+                    <form action="" method="get" autocomplete="on">
+                        <div class="campo">
+                            <label for="inome">Nome completo</label>
+                            <input type="text" name="nome" id="inome" placeholder="Escreva seu nome completo " required
+                                autocomplete="name" minlength="8" maxlength="34">
+                        </div>
+                        <div class="campo">
+
+                            <label for="Sobreinome"> Número de processo</label> <input type="text" name="Sobrenome"
+                                id="Sobreinome" placeholder="Este é o formato : I2095 " required autocomplete="name"
+                                minlength="0" maxlength="5">
+                        </div>
+                        <div class="campo">
+
+                            <label for="Isenha">Senha</label>
+                            <input type="password" name="Senha" id="Isenha" placeholder="Escreva uma senha" required
+                                autocomplete="new-password" minlength="8" maxlength="20">
+                        </div>
+                        <div class="campo">
+
+                            <label for="Horario">Número do aluno</label>
+                            <input type="number" name="numero" id="Horario"
+                                placeholder="Digite o seu número de estudante" autocomplete="cc-number" required>
+                        </div>
+
+                        <p>
+                            <input type="submit" id="MSG" value="Enviar" onclick="ok()">
+                        </p>
+                        <p>Muito obrigo por visitar o nosso!</p>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <script>
+
+
+        </script>
+    </body>
+
+</html>

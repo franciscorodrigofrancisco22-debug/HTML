@@ -3,24 +3,31 @@
     "development"
   ],
   "hints": {
-    "axe/forms": [
+    "compat-api/html": [
       "default",
       {
-        "label": "off"
+        "ignore": [
+          "input[type=month]"
+        ]
       }
     ],
     "axe/text-alternatives": [
-      "default",
+      "off",
       {
         "frame-title": "off"
       }
     ],
-    "axe/structure": [
+    "axe/name-role-value": [
       "default",
       {
-        "list": "off"
+        "link-name": "off"
       }
     ],
-    "axe/name-role-value": "off"
+    "axe/keyboard": [
+      "default",
+      {
+        "nested-interactive": "off"
+      }
+    ]
   }
 }

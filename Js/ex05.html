@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                font: normal 18pt arial;
+                color: white;
+                background: rgb(46, 57, 214);
+            }
+        </style>
+        <title>Primeiros passos com Dom</title>
+    </head>
+
+    <body>
+        <h1>Iniciado estudos com Dom</h1>
+        <p>Aqui vai o resultado</p>
+        <p>Aprendedo a usar o <strong>DOM</strong> em javascript</p>
+        <div class="sim">
+            Clique em mim
+        </div>
+        <script>
+            var body = window.document.body
+
+            var p = document.getElementsByTagName('p')[1]
+
+
+            //var d = document.getElementById('MSG')  d.style.background = 'yellow'
+
+
+            //d.innerText = "Estou aprendedo javascript..."
+
+            //document.getElementById("MSG").innerText = "windows"
+
+            var d = window.document.querySelector("div.sim")
+            d.style.background = 'yellow'
+        </script>
+    </body>
+
+</html>

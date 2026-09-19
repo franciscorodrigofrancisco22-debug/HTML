@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div.container {
+                display: flex;
+                background: rgb(255, 123, 0);
+                flex-flow: row wrap;
+                height: 400px;
+                align-items: flex-start;
+
+
+            }
+
+            div.item {
+                background: rgb(220, 225, 226);
+                border: 1px solid black;
+                padding: 20px;
+                text-align: center;
+            }
+
+            div#i1 {
+                align-self: auto;
+            }
+
+            div#i2 {
+                align-self: auto;
+            }
+
+            div#i3 {
+                align-self: flex-end;
+            }
+
+            div#i4 {
+                align-self: auto;
+            }
+
+            div#i5 {
+                align-self: center;
+            }
+
+            div#i6 {
+                align-self: flex-start;
+            }
+
+            div#i7 {
+                align-self: stretch;
+            }
+        </style>
+        <title>Anatomia dos itens flexbox align-self</title>
+    </head>
+
+    <body>
+        <div class="container">
+
+
+            <div class="item" id="i1">a</div>
+            <div class="item" id="i2">b</div>
+            <div class="item" id="i3">c</div>
+            <div class="item" id="i4">d</div>
+            <div class="item" id="i5">e</div>
+            <div class="item" id="i6">f</div>
+            <div class="item" id="i7">g</div>
+
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,18 @@
+@media screen and (min-width:770px) and (max-width:998px) {
+    body {
+        background-image: linear-gradient(to top, rgb(2, 182, 2), purple);
+    }
+
+    h1 {
+        color: rgb(123, 133, 133);
+    }
+
+    input[type=button] {
+        background-color: rgb(1, 88, 88);
+    }
+
+    input[type=submit] {
+        background-color: rgb(2, 82, 134);
+    }
+
+}
