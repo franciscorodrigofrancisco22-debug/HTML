@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+
+            body {
+
+                padding: 12px 10px;
+                margin: 6px;
+                text-align: center;
+                font: bolder 18pt Arial;
+                background: black;
+                color: orange;
+            }
+        </style>
+        <title>escolha:</title>
+    </head>
+
+    <body>
+        <h1>Sistema de multas</h1>
+        Velociade do carro: <input type="number" name="vol" id="volo"> Km/h
+
+        <input type="submit" value="Enviar" onclick=" multa()">
+        <div id="resultado">
+
+        </div>
+        <script>
+            function multa() {
+
+                var vol = window.document.getElementById("volo");
+                var res = window.document.getElementById("resultado");
+                var vel = Number(vol.value);
+
+                if (vel > 60) {
+                    res.innerHTML = window.alert("Voce esta sendo Multado!")
+                }
+                res.innerHTML = `<p>A sua velocidade é <strong>${vel} Km/h</strong></p>`;
+                res.innerHTML += `Dirija sempre com segurança!`
+
+            }
+        </script>
+    </body>
+
+</html>
