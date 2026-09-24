@@ -1,0 +1,61 @@
+html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>D.E.V</title>
+
+        <link rel="shortcut icon" href="../Projeto Portefólio/favicon.svg" type="image/x-icon">
+        <link rel="stylesheet" href="Form14.cssForm14.css">
+        <link rel="stylesheet" href="Form14.css" media="screen and (min-width:768px)">
+    </head>
+
+    <body>
+        <main>
+
+            <!--Grupo dev-->
+            <section class="login">
+                <div class="imagens">
+
+                </div>
+                <div class="formulario">
+                    <h1>Login</h1>
+                    <form action="Cadastro.php" method="post" autocomplete="on">
+                        <div class="campo">
+                            <i><img src="robo.png" alt=""></i>
+                            <input type="text" name="nome" id="Nome" autocomplete="name" maxlength="30"
+                                placeholder="Digite seu Nome completo"><label for="Nome">Nome Completo:</label>
+                        </div>
+                        <div class="campo"> <i><img src="robo.png" alt=""></i>
+                            <label for="Email">Email:</label>
+                            <input type="email" name="mail" id="Email" maxlength="40" autocomplete="email" required
+                                placeholder="Exemplo:rodrigo@gmail.com">
+                        </div>
+                        <div class="campo">
+                            <i><img src="programacao.png" alt=""></i>
+                            <label for="Senha">Senha:</label>
+                            <input type="password" name="senha" id="Senha"
+                                pattern="(?=•*$=\d)(?=•*[a-z])(?=•*[A-Z•{8}])" placeholder="Digite uma senha" required
+                                autocomplete="current-password">
+                        </div>
+                        <div class="campo">
+                            <label for="Numero">Número de telefone:</label><i><img src="programacao.png" alt=""></i>
+                            <input type="tel" name="nome" id="Numero" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" required
+                                placeholder=" Este é o Formato: XXX-XXX-XXX" autocomplete="tel-national">
+                        </div>
+                        <button type="button">
+                            Entrar
+                        </button>
+
+                        <button type="button">
+                            Limpar
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+    </body>
+
+</html>

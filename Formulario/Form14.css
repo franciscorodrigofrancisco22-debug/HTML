@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+@charset "UTF-8";
+@media screen and (min-width:768px) and (max-width:992px) {
+    body {
+        background-image: linear-gradient(to top, rgb(17, 17, 17), #077bbec4);
+    }
+
+
+    section.login {
+        width: 80%;
+        overflow: hidden;
+    }
+
+    section.login>div.imagens {
+        width: 40%;
+        height: 100%;
+        background-image: url("metal.jpg");
+        float: left;
+
+    }
+
+    h1 {
+        color: rgb(0, 81, 128);
+    }
+
+    section.login>div.formulario {
+        float: right;
+        width: 60%;
+    }
+}
+
+
+
+
+@media screen and (min-width:998px) and (max-width:1200px) {
+    body {
+        background-image: linear-gradient(to top, rgb(10, 177, 168), black);
+    }
+
+    section.login {
+        width: 88%;
+        overflow: hidden;
+    }
+
+    h1 {
+        color: rgb(3, 104, 134);
+    }
+
+    div.formulario {
+        float: right;
+        width: 45%;
+    }
+
+    section.login>div.imagens {
+        width: 55%;
+        height: 100%;
+        float: left;
+        background-image: url("6692832af692f735f1192b47f012a794d77a9368dcffef3ae068dbdb49f74e8c.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+    body {
+        background-image: linear-gradient(to top, #300135c4, rgb(10, 177, 168));
+    }
+
+    section.login {
+        width: 70%;
+        overflow: hidden;
+    }
+
+    div.formulario {
+        float: left;
+        width: 60%;
+    }
+
+    section.login>div.imagens {
+        width: calc(40%);
+        height: 100%;
+        float: right;
+        background-image: url("metal.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+}

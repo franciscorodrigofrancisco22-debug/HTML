@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                text-align: center;
+                font: bolder 18pt Arial;
+                background: #daa520;
+            }
+
+
+
+            input {
+                font: normal 15pt Arial;
+                padding: 12px 10px;
+                width: 30%;
+                border-radius: 10px;
+            }
+        </style>
+        <title>País</title>
+    </head>
+
+    <body>
+        <h1>Sistema de if else </h1>
+        <label for="textv">Escolha um país:</label> <input type="text" name="tetxv" id="textv"
+            placeholder="Escreva um país">
+
+        <input type="button" value="Enviar" onclick="Pais()">
+
+        <div id="resulta">
+
+        </div>
+        <script>
+            function Pais() {
+                var textve = window.document.getElementById("textv");
+                var vel = String(textve.value);
+                var res = window.document.getElementById("resulta");
+                if (vel == "Brazil") {
+                    alert(`Você é   Brasileiro!`);
+                }
+                else if (vel == "Brazil" || vel == "Brazil") {
+                    alert("Você mora em Brazil! ")
+                }
+
+                else {
+                    alert("Você é  estrangeiro!")
+                }
+
+                res.innerHTML = `O seu pais é ${vel}`;
+
+
+            }
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: white;
+                font-family: 'Times New Roman', Times, serif;
+                width: 100vw;
+                height: 100vh;
+                font: bold 15pt Arial;
+            }
+
+            main {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+
+            section {
+                top: 50%;
+                left: 50%;
+                width: 68%;
+                height: 500px;
+                background: rgb(12, 15, 223);
+                transform: translate(-50%, -50%);
+                position: relative;
+                display: flex;
+                border-radius: 10px;
+
+            }
+
+            div#palavra {
+                margin-right: 20%;
+                justify-content: space-between;
+                text-align: center;
+                background: linear-gradient(180deg, #1d4ed8, #7e22ce, #1d4ed8);
+                height: 40%;
+                margin: auto;
+                width: 100%;
+                padding: 10px 12px;
+
+
+
+            }
+
+            div#Campo {
+                background: whitesmoke;
+                width: 100%;
+
+            }
+
+            h1 {
+                color: white;
+                font-size: 2.8em;
+                margin-right: 25%;
+            }
+
+            p {
+                color: white;
+                margin-left: 18px;
+                font-size: 1em;
+            }
+
+            div#Campo h1 {
+                color: purple;
+                text-align: center;
+                margin-left: 10%;
+            }
+
+            i {
+                margin-left: 4%;
+            }
+
+            button[type=submit] {
+                cursor: pointer;
+                width: 60%;
+                height: 40px;
+                margin-left: 20%;
+                background: linear-gradient(90deg, #2563eb, #7e22ce);
+                border-radius: 10px;
+                transition: transform 0.2s, opacity 0.2s;
+            }
+
+            button[type=submit]:hover {
+                transform: translateY(-2px);
+                opacity: 0.9;
+            }
+
+            div#campo>label>i {
+                color: white;
+            }
+
+            div#campo {
+                background: rgb(68, 0, 82);
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto 20px;
+                height: 10%;
+
+                box-sizing: border-box;
+            }
+
+            form {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                height: 100%;
+            }
+
+            input {
+                box-sizing: border-box;
+                width: 78%;
+                font: bold 11pt Arial;
+                height: 67%;
+                padding: 10px;
+                transform: translateY(6px);
+                border-radius: 10px;
+            }
+        </style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <title>IPIz-login</title>
+    </head>
+
+    <body>
+        <main>
+            <section>
+                <div id="palavra">
+                    <h1>IPIz</h1>
+                    <p>Cria sua conta para começar </p>
+                </div>
+                <div id="Campo">
+                    <form action="Cadastro.php" method="post">
+                        <h1>Cadastro</h1>
+                        <div id="campo">
+                            <label for="ilogin"><i class="material-icons">person</i></label>
+                            <input type="email" name="login" id="ilogin" placeholder="Seu e-mail" autocomplete="email"
+                                required maxlength="30">
+                        </div>
+                        <div id="campo">
+                            <label for="senh"><i class="material-icons">vpn_key</i></label>
+                            <input type="password" name="senha" id="senh" placeholder="Sua senha"
+                                autocomplete="current-password" required minlength="8" maxlength="20">
+                        </div>
+                        <div id="campo">
+                            <label for="senha"><i class="material-icons">vpn_key</i></label>
+                            <input type="text" name="senha" id="senha" placeholder="Confirmar sua senha"
+                                autocomplete="current-password" required minlength="8" maxlength="20">
+                        </div>
+                        <button type="submit"><i class="material-icons">send </i><i>Cadastrar</i> </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </body>
+
+</html>

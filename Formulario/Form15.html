@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jarvis</title>
+        <link rel="shortcut icon" href="42a908ae66a4a04774a424422ce5f02070f7619dc3c3e14b75828090d8a0609d.png"
+            type="image/x-icon">
+
+        <link rel="stylesheet" href="Form15.css">
+    </head>
+
+    <body>
+        <main>
+            <section id="login">
+
+                <div class="imagens">
+                    <img src="42a908ae66a4a04774a424422ce5f02070f7619dc3c3e14b75828090d8a0609d.png" alt="">
+                    <!--Aqui acabou a div imagens-->
+                </div>
+                <div class="formulario">
+                    <h1>Criar conta</h1>
+                    <p>Bem-vindo ao jarvis</p>
+                    <form action="Cadastro.php" method="post">
+                        <div class="campo">
+                            <label for="Nome">Nome Completo</label>
+                            <input type="text" name="nome" id="Nome" placeholder="Escreva o seu nome completo" required
+                                autocomplete="name" minlength="0" maxlength="30">
+                        </div>
+                        <div class="campo">
+                            <label for="Email">Email </label>
+                            <input type="email" name="nome" id="Email" placeholder="Exemplo:rodrigofrancisco@gmail.com"
+                                autocomplete="email" required minlength="0" maxlength="40">
+                        </div>
+                        <div class="campo">
+                            <label for="Password">Senha</label>
+                            <input type="password" name="senha" id="Password" required autocomplete="new-password"
+                                pattern="(?=•*$=\d)(?=•*[a-z])(?=•*[A-Z•{8}])" placeholder="Escreva uma senha"
+                                maxlength="18">
+                        </div>
+                        <div class="campo">
+                            <label for="NUmber">Número</label>
+                            <input type="number" name="numero" id="NUmber" placeholder="Escreva o seu número "
+                                minlength="0" maxlength="52" required>
+                        </div>
+
+                        <p>
+                            <button type="button">
+                                Registrar
+                            </button>
+                        </p>
+
+                    </form>
+                    <!--Aqui terminou a div formulario-->
+                </div>
+            </section>
+        </main>
+        <script>
+            alert("Muito obrigado por acessar este site");
+            prompt("Esta é a primeira vez que visita o nosso site")
+        </script>
+    </body>
+
+</html>
