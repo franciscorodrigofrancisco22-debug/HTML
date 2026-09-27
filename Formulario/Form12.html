@@ -18,38 +18,43 @@
                     <img src="IMG-20260129-WA0001.jpg" alt="">
                 </div>
                 <div id="formulario">
-                    <h1>Criar conta</h1>
-                    <p> Seja Bem-vindo ou Bem-vinda novamente a escola do IPIZ, Faça o sessão para poder acessar sua
+                    <h1>Iniciar sessão</h1>
+                    <p> Seja Bem-vindo ou Bem-vinda novamente a escola do IPIZ, Faça a sessão para poder acessar a sua
                         pauta
                     </p>
-                    <form action="EX01.js" method="post" autocomplete="on" name="fExempla">
+                    <form action="github.com" method="post" autocomplete="on" name="fExempla" target="_blank">
                         <section name="Exemplo">
-                            <div class="campo" name="Campo"><i><img src="programacao.png" alt="" id="robo"></i>
-                                <input type="text" name="texto" id="texte" autocomplete="email" required
+                            <div class="campo" name="Campo"><i class="material-icons">person</i>
+                                <input type="text" name="texto" id="texte" autocomplete="name" required
                                     placeholder="Insira o  seu nome completo" minlength="0" maxlength="40">
                                 <label for="login">Login</label>
                             </div>
-                            <div class="campo" name="Campo"><i><img src="programacao.png" alt="" id="robo"></i>
+                            <div class="campo" name="Campo"><i class="material-icons">mail</i>
                                 <input type="email" name="mail" id="login" autocomplete="email" required
                                     placeholder="Insira um email " minlength="0" maxlength="40">
                                 <label for="login">Login</label>
                             </div>
                             <div class="campo" name="Campo">
-                                <i><img src="robo.png" alt="" id="robo"></i>
+                                <i class="material-icons">password</i>
                                 <input type="password" name="sena" id="isenha" minlength="8" maxlength="20"
                                     autocomplete="current-password" required placeholder="Insira   uma senha">
                                 <label for="isenha">Senha</label>
                             </div>
                             <div class="campo" name="Campo">
-                                <i><img src="robo.png" alt="" id="robo"></i>
+                                <i class="material-icons">looks_two</i>
+                                <input type="text" name="sen" id="isenha" minlength="0" maxlength="2" required
+                                    pattern="[0-9]*" placeholder="Insira   o seu número">
+                                <label for="isenha">Senha</label>
+                            </div>
+                            <div class="campo" name="Campo">
+                                <i class="material-icons">settings</i>
                                 <input type="text" name="Texta" id="senha" minlength="0" maxlength="5"
-                                    autocomplete="current-password" required placeholder="Insira   um Processo">
-                                <label for="Processo">Processo</label>
+                                    autocomplete="current-password" required placeholder="insira o seu processo "
+                                    pattern="[A-Za-z][0-9]{4}">
+                                <label for="Processo"></label>
                             </div>
                         </section>
-
-
-                        <input type="submit" onclick="Clicar()" value="Enviar">
+                        <input type="submit" value="Enviar" onclick="Clicar()">
 
                     </form>
                 </div>
@@ -59,7 +64,7 @@
         <script>
 
             function Clicar() {
-                var Conta, Senha, Email, Processo;
+                var Conta, Senha, Email, Processo, Numero;
                 Conta = document.fExempla.texto.value;
                 window.alert("Nome do aluno é : " + Conta);
 
@@ -68,7 +73,8 @@
                 Email = document.fExempla.mail.value;
                 window.alert("Seu email  é  :  " + Email);
                 Processo = document.fExempla.Texta.value;
-                window.alert("Seu pocesso é :  " + Processo);
+                window.alert("Seu pocesso é :  " + Processo); Numero = document.fExempla.sen.value;
+                window.alert("Seu número é :  " + Numero);
             }
 
         </script>

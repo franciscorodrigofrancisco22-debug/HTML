@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            input {
+                display: flex;
+                flex-direction: column;
+            }
+        </style>
+        <title>Document</title>
+    </head>
+
+    <body>
+        <h1>Escolhe um número</h1>
+        <label for="n1">Digite um número:</label>
+        <input type="number" name="nome" id="n1">
+
+        <section id="res">
+
+        </section>r
+
+        <input type="submit" value="Enviar" onclick="Numero()">
+        <script>
+            function Numero() {
+                var n1 = window.document.getElementById("n1");
+                var vel = Number(n1.value);
+                var res = window.document.getElementById("res");
+                res.innerHTML = `O número digitado  é :${vel} <br>`;
+
+                while (vel => 6) {
+                    res.innerHTML += `AIA${vel}<br>`;
+                    vel++;
+                }
+            }
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(){
+	
+	int num1, num2, soma;
+	
+	printf("Digite primeiro numero");
+	scanf("%d",&num1);
+	
+		
+	printf("Digite Segundo  numero");
+	scanf("%d",&num2);
+	
+	soma = num1 + num2;
+	
+	printf("A soma e:%d/n", soma);
+	
+	return 0;
+}

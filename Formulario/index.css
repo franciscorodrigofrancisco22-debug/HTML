@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #059bc0;
+    background: linear-gradient(90deg, #059bc0, #ffff, #03241a);
     width: 100vw;
     height: 100vh;
 }
@@ -34,19 +34,22 @@ section#login>div#formulario {
     padding: 10px;
 }
 
+i {
+    margin-left: 5px;
+}
+
 section#login {
     transition: width 1s height 1.3s;
     transition-timing-function: ease;
     background-color: white;
-    width: 256px;
-    height: 550px;
+    width: 54%;
+    height: 89%;
     border-radius: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
     overflow: hidden;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
-
+    box-shadow: 0px 0px 12px 12px rgb(121, 139, 173);
     transform: translate(-50%, -50%);
 }
 
@@ -87,52 +90,35 @@ form>div.campo {
 
 }
 
-form>input[type=submit] {
+input[type=submit] {
     font-size: 1em;
     width: 100%;
     height: 40px;
     background-color: #02576d;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     display: block;
 
 }
 
-a {
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    width: 100%;
-    background-color: rgb(4, 252, 169);
-    height: 40px;
-    display: block;
-    padding: 2px;
-    text-align: center;
-    margin-top: 10px;
-}
-
-a:hover {
-    background-color: #2b2e3b;
-
-}
 
 
-form>div.campo>input {
+input {
     margin: auto;
     padding: 12px;
     height: 40px;
     width: calc(79%);
-    transform: translateY(-18px);
+    margin-top: 10px;
+    margin-bottom: 11px;
     border-radius: 5px;
 
 }
 
 
-form>input[type=submit]:hover {
+
+input[type=submit]:hover {
     background-color: #03241a;
 
 }
