@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                font: bold 20pt Arial;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                background: rgba(2, 16, 95, 0.973)
+            }
+
+            h1 {
+                text-align: center;
+                color: white;
+                font-family: monospace, sans-serif;
+            }
+
+            div {
+                background: linear-gradient(90deg, blue, darkblue);
+                width: 40%;
+                padding: 12px 16px;
+                color: white;
+                margin: auto;
+                border-radius: 10px;
+            }
+
+            button {
+                padding: 5px 5px;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+        </style>
+        <title>Conversor</title>
+    </head>
+
+    <body id="nn2">
+        <h1>
+            Conversor de moeda
+        </h1>
+        <p>
+        <div>
+            <label for="nn1">Escolha qualquer botao:</label>
+            <button value="USD-Dólar" name="US" id="USD" onclick="Nome()">USD-Dolar</button>
+            <button value="AOA-Kwanza" name="ER" id="AOA" onclick="AOA
+                ()">AOA-Kwanza</button>
+            <button name="Ev" id="BRl" onclick="BRL()">BRL-Real</button>
+            <button value="EUR-Euro" name="ER" id="EUR" onclick="Eur()">EUR-Euro</button>
+
+            <button id="USD-KZ" name="SDSD" onclick="DUSD()">
+                KZ-USD
+            </button>
+
+            <button id=" BRL-EUR" name="SDSD" onclick="BRLER()">
+                BRL-EUR
+            </button>
+        </div>
+        </p>
+        <br>
+        <div id="saida">
+
+        </div>
+        <script>
+            function Nome() {
+
+
+
+
+
+
+
+                var res = document.getElementById("res");
+
+
+                let saida = document.getElementById("saida");
+
+
+                if (document.getElementById("USD").value) {
+                    let pergunta = Number(window.prompt("Digite um número"));
+
+                    var USD = 1.50;
+                    res = USD * pergunta;
+
+
+                    saida.innerHTML = `<p>O valor digitado é ${pergunta} em Dolar é  ${res}$ <br></p>`
+
+                }
+
+            } function BRL() {
+
+
+                let pergunta = Number(window.prompt("Digite outro número"));
+                var BRL = 5.45;
+                res = BRL * pergunta;
+
+                saida.innerHTML = `O valor digitado é  ${pergunta} em Real é  ${res}R$`
+
+            }
+
+            function AOA() {
+
+                let pergunta = Number(window.prompt("Digite outro número"));
+                var AOA = 1.5;
+                res = AOA * pergunta;
+
+                saida.innerHTML = `O valor digitado é  ${pergunta} em Kwanza é  ${res}KZ`
+
+            }
+
+
+            function Eur() {
+
+
+                let pergunta = Number(window.prompt("Digite outro número"));
+
+                var EUR = 0.92;
+                res = EUR * pergunta;
+
+                saida.innerHTML = `O valor digitado é  ${pergunta} em Euro é  ${res}$`
+
+
+            }
+            function DUSD() {
+                let pergunta = Number(window.prompt("Digite outro número"));
+                var AOA = 1.5;
+                var USD = 1.500;
+                res = AOA * USD * pergunta;
+
+                saida.innerHTML = `${pergunta}kz em  Dolar é  ${res}€`
+
+            }
+
+
+            function BRLER() {
+                let pergunta = Number(window.prompt("Digite outro número"));
+                var BRL = 0.92;
+                var EUR = 5.45;
+                res = BRL * EUR * pergunta;
+
+                saida.innerHTML = `${pergunta}R$ em  Euro é  ${res}€`
+
+            }
+
+        </script>
+    </body>
+
+</html>

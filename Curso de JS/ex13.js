@@ -9,3 +9,6 @@ do {
 ate ao infinito:
     while (R => 1)
 }*/
+
+
+

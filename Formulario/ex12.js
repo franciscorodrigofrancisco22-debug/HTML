@@ -11,7 +11,7 @@ function mEdia() {
     res = window.alert(`Sua media é : ${S}`);
 
     if (S <= 10) {
-        window.alert("Não transita 😥! ");
+        re1 = alert("Não transita 😥! ");
     } else if (S <= 12 || S < 12) { window.alert("Transita com difiência  🙂!"); } else {
         window.alert("Transita 😁!");
     }

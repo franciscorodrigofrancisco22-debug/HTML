@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+
+        </style>
+        <title>Dia do Trabalho</title>
+    </head>
+
+
+    <body>
+        <h1>Digite um número de 0 a 6;
+        </h1>
+        <label for="n2">Digite o número:</label>
+        <input type="number" name="n1" id="n2">
+
+        <div id="res">
+
+        </div>
+        <div id="ves">
+
+        </div>
+        <div id="mes">
+
+        </div>
+        <div id="ses">
+
+        </div>
+        <div id="pes">
+
+        </div>
+        <div id="des">
+
+        </div>
+        <div id="fes">
+
+        </div>
+        <div id="nes">
+
+        </div>
+        <input type="submit" value="Entrar" onclick="B()">
+        <script>
+            function B() {
+                var n2 = window.document.getElementById("n2");
+                var vel = Number(n2.value);
+
+
+                switch (vel) {
+                    case 0:
+                        window.alert("Domingo");
+                        res.innerHTML += `Você trabalha no Domingo <br>`;
+                        break
+                    case 1:
+                        window.alert("Segunda-feira"); ves.innerHTML += `Você trabalha naSegunda-feira `;
+                        break
+                    case 2:
+                        window.alert("Terça-feira"); ses.innerHTML += `Você trabalha na Terça-feira `
+                        break
+                    case 3:
+                        window.alert("Quarta-feira");
+                        mes.innerHTML += `Você trabalha na Quarta-feira `
+                        break
+                    case 4:
+
+                        window.alert("Quinta-feira");
+                        pes.innerHTML += `Você trabalha na Quinta-feira `
+                        break
+                    case 5:
+                        window.alert("Sexta-feira");
+                        nes.innerHTML += `Você trabalha na Sexta-feira `
+                        break
+                    case 6:
+                        window.alert("Sabado!");
+                        des.innerHTML += `Você trabalha no Sabado! `
+                        break;
+
+                    default:
+                        fes.innerHTML += `[ERRO] número invalido! `;
+                        break;
+                }
+            }
+        </script>
+    </body>
+
+</html>

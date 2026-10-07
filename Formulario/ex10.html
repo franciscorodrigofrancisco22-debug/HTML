@@ -38,7 +38,7 @@
                 left: 50%;
                 text-align: center;
                 position: relative;
-                background: linear-gradient(90deg, darkcyan, white, purple);
+                background: linear-gradient(90deg, darkcyan, darkblue, purple);
                 color: black;
 
             }
@@ -51,16 +51,13 @@
                 width: 20%;
                 margin-top: 5%;
                 height: 17%;
-                background: linear-gradient(90deg, white, rgb(12, 89, 119), purple);
+                background: linear-gradient(90deg, rgb(12, 89, 119), blue);
                 transition: transform 0.2s opacity 0.2s;
                 border-radius: 10px;
                 cursor: pointer;
             }
 
-            input[type=submit]:hover {
-                background: linear-gradient(to top, blue, white, darkcyan);
-                opacity: 0.9;
-            }
+
 
             input[type=text] {
                 width: 50%;
@@ -89,14 +86,27 @@
                 <input type="number" name="nome" id="n1"><br><label for="n2">Nota 2</label>
                 <input type="number" name="nom" id="n2"> <br> <label for="n3">Nota 3</label>
                 <input type="number" name="nomi" id="n3">
-                <br>
+                <br><input type="submit" value="Enviar" onclick="mEdia()">
+
                 <div id="res">
                 </div>
-                <br>
-                <input type="submit" value="Enviar" onclick="mEdia()">
+                <div id="re0">
+                </div>
+                <div id="re1">
 
+                </div>
+
+                <div id="re2">
+
+                </div>
+                <br>
         </main>
         </div>
+
+
+
+
+
         <script src="ex12.js">
         </script>
     </body>

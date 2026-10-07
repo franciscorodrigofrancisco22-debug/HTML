@@ -36,9 +36,10 @@
                             </div>
                             <div class="campo" name="Campo">
                                 <i class="material-icons">password</i>
-                                <input type="password" name="sena" id="isenha" minlength="8" maxlength="20"
+                                <input type="password" name="senhas" id="senha" minlength="8" maxlength="20"
                                     autocomplete="current-password" required placeholder="Insira   uma senha">
-                                <label for="isenha">Senha</label>
+                                <span class="toggle-password" onclick="toggleSenha()">👁️</span>
+
                             </div>
                             <div class="campo" name="Campo">
                                 <i class="material-icons">looks_two</i>
@@ -54,29 +55,23 @@
                                 <label for="Processo"></label>
                             </div>
                         </section>
-                        <input type="submit" value="Enviar" onclick="Clicar()">
+                        <input type="submit" value="Enviar">
 
                     </form>
                 </div>
             </section>
         </main>
-
         <script>
+            function toggleSenha() {
+                const campoSenha = document.getElementById("senha");
+                // Alterna entre 'password' e 'text'
+                if (campoSenha.type === "password") {
+                    campoSenha.type = "text";
+                } else {
+                    campoSenha.type = "password";
+                }
 
-            function Clicar() {
-                var Conta, Senha, Email, Processo, Numero;
-                Conta = document.fExempla.texto.value;
-                window.alert("Nome do aluno é : " + Conta);
-
-                Senha = document.fExempla.sena.value;
-                window.alert("Sua senha  é :  " + Senha);
-                Email = document.fExempla.mail.value;
-                window.alert("Seu email  é  :  " + Email);
-                Processo = document.fExempla.Texta.value;
-                window.alert("Seu pocesso é :  " + Processo); Numero = document.fExempla.sen.value;
-                window.alert("Seu número é :  " + Numero);
             }
-
         </script>
     </body>
 
